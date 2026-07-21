@@ -55,7 +55,7 @@ charusat-website-clone/
 │   ├── profile.css
 │   └── register.css
 ├── images/
-│   └── chaitya.jpg
+│   └── profile.jpg
 └── README.md
 ```
 
