@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHARUSAT | FAQ - Help & Support</title>
+    <link rel="stylesheet" type="text/css" href="faq.css">
+</head>
+
+<body>
+    <header class="main-header">
+        <div class="logo">CHARUSAT</div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html">Home Page</a></li>
+                <li><a href="events.html">Events Page</a></li>
+                <li><a href="faq.html" class="active">FAQ</a></li>
+                <li><a href="about.html">About Portal</a></li>
+                <li><a href="login.html" class="nav-button">Login Page</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="faq-page-container">
+        <h1>Frequently Asked Questions (FAQ)</h1>
+        <p class="subtitle">Find quick answers to common questions about the e-Portal, academic procedures, and fees.
+        </p>
+
+        <div class="search-bar">
+            <input type="text" placeholder="Search for a question or keyword (e.g., 'password reset', 'attendance')">
+            <button>Search</button>
+        </div>
+
+        <div class="faq-categories">
+            <section class="faq-section">
+                <h2>&#128274; Account & Login</h2>
+
+                <div class="faq-item">
+                    <button class="question-toggle" onclick="this.classList.toggle('open')">
+                        How do I reset my password if I forget it?
+                        <span class="icon">&#9660;</span>
+                    </button>
+                    <div class="answer-content">
+                        <p>If you forget your password, navigate to the **Login Page** and click on the **'Forgot
+                            Password?'** link. You will be prompted to enter your registered Enrollment ID or email
+                            address to receive a password reset link.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="question-toggle" onclick="this.classList.toggle('open')">
+                        I am a new student, how do I get my Enrollment ID and initial password?
+                        <span class="icon">&#9660;</span>
+                    </button>
+                    <div class="answer-content">
+                        <p>New students must first complete the **Registration** process using the Provisional Admission
+                            Number provided by the administration. Your permanent Enrollment ID and initial password
+                            will be sent to your registered email address upon verification.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="faq-section">
+                <h2>&#128202; Academic & Results</h2>
+
+                <div class="faq-item">
+                    <button class="question-toggle" onclick="this.classList.toggle('open')">
+                        When will the semester results be declared?
+                        <span class="icon">&#9660;</span>
+                    </button>
+                    <div class="answer-content">
+                        <p>Results are typically declared **4 to 6 weeks** after the final examination date. Check the
+                            **Dashboard** under 'Recent Exam Grades' and the 'Academic Calendar' on the **Events Page**
+                            for official notification dates.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="question-toggle" onclick="this.classList.toggle('open')">
+                        Where can I check my current attendance status?
+                        <span class="icon">&#9660;</span>
+                    </button>
+                    <div class="answer-content">
+                        <p>Your current attendance percentage for all subjects is displayed on your **Student
+                            Dashboard** under the 'Attendance Status' card. Detailed subject-wise breakdown is available
+                            via the link provided there.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="faq-section">
+                <h2>&#128184; Fees & Payments</h2>
+
+                <div class="faq-item">
+                    <button class="question-toggle" onclick="this.classList.toggle('open')">
+                        What is the procedure for paying semester fees online?
+                        <span class="icon">&#9660;</span>
+                    </button>
+                    <div class="answer-content">
+                        <p>Login to your **Dashboard**, navigate to the 'Pending Fees Due' section, and click the link
+                            to the payment portal. We accept payment via Debit/Credit Card, Net Banking, and UPI.</p>
+                    </div>
+                </div>
+            </section>
+
+            <div class="support-link-card">
+                <h3>Still need help?</h3>
+                <p>If your question isn't answered here, please reach out to the support team directly.</p>
+                <a href="contact.html" class="contact-button">Go to Contact Us Page &#10145;</a>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="main-footer">
+        <div class="footer-links">
+            <a href="about.html">About Portal</a> |
+            <a href="contact.html">Contact Us</a> |
+            <a href="admin.html">Admin Control Panel</a>
+        </div>
+        <p>&copy; 2025 CHARUSAT (Student E-Portal). All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Simple client-side script for FAQ accordion functionality
+        document.querySelectorAll('.question-toggle').forEach(button => {
+            button.addEventListener('click', () => {
+                const answer = button.nextElementSibling;
+                const isExpanded = button.classList.contains('open');
+
+                // Toggle max-height for smooth transition (CSS handles the transition)
+                if (isExpanded) {
+                    answer.style.maxHeight = answer.scrollHeight + "px";
+                } else {
+                    answer.style.maxHeight = null;
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

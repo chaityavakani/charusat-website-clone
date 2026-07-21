@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHARUSAT | Admin Control Panel</title>
+    <link rel="stylesheet" type="text/css" href="admin.css">
+</head>
+
+<body>
+    <header class="admin-header">
+        <div class="logo">CHARUSAT Admin Console</div>
+        <div class="header-actions">
+            <a href="#" class="admin-link">Administrator</a>
+            <a href="login.html" class="logout-button">&#10145; Logout</a>
+        </div>
+    </header>
+
+    <div class="admin-layout">
+        <aside class="sidebar-nav">
+            <div class="admin-summary">
+                <h4>System Manager</h4>
+                <p>Access Level: Full Control</p>
+            </div>
+
+            <nav class="side-menu">
+                <ul>
+                    <li><a href="admin.html" class="active">&#9989; Dashboard Overview</a></li>
+                    <li><a href="#">&#128100; Manage Students</a></li>
+                    <li><a href="#">&#128196; Course & Subject Editor</a></li>
+                    <li><a href="#">&#128202; Result Processing</a></li>
+                    <li><a href="#">&#128424; System Logs & Audit</a></li>
+                    <li><a href="#">&#128188; Fee & Payment Control</a></li>
+                    <li><a href="#">&#128227; Send Notifications</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="main-content">
+
+            <h1>System Dashboard Overview</h1>
+
+            <section class="metrics-grid">
+                <div class="metric-card student-card">
+                    <h4>Total Registered Students</h4>
+                    <p class="big-number">18,450</p>
+                    <a href="#">View Directory &rarr;</a>
+                </div>
+                <div class="metric-card course-card">
+                    <h4>Active Programs</h4>
+                    <p class="big-number">72</p>
+                    <a href="#">Edit Programs &rarr;</a>
+                </div>
+                <div class="metric-card pending-card">
+                    <h4>Pending Registrations</h4>
+                    <p class="big-number">12</p>
+                    <a href="#">Approve Accounts &rarr;</a>
+                </div>
+            </section>
+
+            <div class="two-column-area">
+
+                <section class="card activity-log-card">
+                    <h3>Recent System Activity</h3>
+                    <ul>
+                        <li><span class="activity-time">9:30 AM:</span> Result CSV uploaded for Sem V (CSPIT).</li>
+                        <li><span class="activity-time">8:45 AM:</span> New student (C25CE005) registration approved.
+                        </li>
+                        <li><span class="activity-time">Yesterday:</span> Server backup completed successfully.</li>
+                        <li><span class="activity-time">2 days ago:</span> Fee notification sent to 2,500 students.</li>
+                    </ul>
+                    <a href="#" class="card-link">Full Audit Log &rarr;</a>
+                </section>
+
+                <section class="card system-status-card">
+                    <h3>System Health</h3>
+                    <div class="status-item healthy">
+                        <span class="status-icon">&#10003;</span>
+                        <p>Database Connection: **Online**</p>
+                    </div>
+                    <div class="status-item healthy">
+                        <span class="status-icon">&#10003;</span>
+                        <p>Portal Uptime: **99.9%**</p>
+                    </div>
+                    <div class="status-item warning">
+                        <span class="status-icon">&#9888;</span>
+                        <p>Low Disk Space: **Alert** on secondary storage.</p>
+                    </div>
+                    <a href="#" class="card-link">Manage System Resources &rarr;</a>
+                </section>
+            </div>
+
+            <section class="quick-actions-section">
+                <h3>System Tools</h3>
+                <div class="action-buttons-grid">
+                    <a href="#" class="action-btn">&#128226; Push Global Announcement</a>
+                    <a href="#" class="action-btn">&#128185; Force Server Reboot</a>
+                    <a href="#" class="action-btn">&#128273; Reset Student Password</a>
+                </div>
+            </section>
+
+        </main>
+    </div>
+
+    <footer class="admin-footer">
+        <p>&copy; 2025 CHARUSAT Administration. Designed for System Control.</p>
+    </footer>
+</body>
+
+</html>

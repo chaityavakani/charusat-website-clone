@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHARUSAT | Student Profile - Personal Details</title>
+    <link rel="stylesheet" type="text/css" href="profile.css">
+</head>
+
+<body>
+    <header class="top-header">
+        <div class="logo">CHARUSAT Portal</div>
+        <div class="header-actions">
+            <a href="#" class="icon-link">&#128276; Notifications (3)</a>
+            <a href="profile.html" class="profile-link">Hello, Chaitya!</a>
+            <a href="login.html" class="logout-button">&#10145; Logout</a>
+        </div>
+    </header>
+
+    <div class="dashboard-layout">
+
+        <aside class="sidebar-nav">
+            <div class="profile-summary">
+                <div class="profile-avatar">CJ</div>
+                <h4>Chaitya J Vakani</h4>
+                <p>CSPIT - B.Tech (CE)</p>
+            </div>
+
+            <nav class="side-menu">
+                <ul>
+                    <li><a href="dashboard.html">&#127968; Dashboard Home</a></li>
+                    <li><a href="profile.html" class="active">&#128100; My Profile</a></li>
+                    <li><a href="events.html">&#128197; Academic Calendar</a></li>
+                    <li><a href="#">&#128273; Change Password</a></li>
+                    <li><a href="#">&#128196; Enrollment Details</a></li>
+                    <li><a href="#">&#128202; Grade Report</a></li>
+                    <li><a href="faq.html">&#10067; Help & Support (FAQ)</a></li>
+                    <li><a href="contact.html">&#9993; Contact Us</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="main-content">
+
+            <h1>Manage Student Profile</h1>
+
+            <section class="profile-overview card">
+                <div class="avatar-edit">
+                    <img src="chaitya.jpg" alt="Profile Picture" class="current-avatar">
+                    <button class="edit-btn primary-bg">&#9998; Upload New Photo</button>
+                </div>
+                <div class="student-info">
+                    <h2>Chaitya Jigneshbhai Vakani</h2>
+                    <p><strong>Enrollment ID:</strong> D25CE152</p>
+                    <p><strong>Institute:</strong> CSPIT</p>
+                    <p><strong>Program:</strong> B.Tech. (Computer Engineering)</p>
+                </div>
+            </section>
+
+            <div class="profile-tabs">
+                <a href="#" class="tab-item active">Personal & Contact</a>
+                <a href="#" class="tab-item">Academic Details</a>
+                <a href="#" class="tab-item">Guardian Information</a>
+                <a href="#" class="tab-item">Documents</a>
+            </div>
+
+            <section class="profile-form card">
+                <h3>Personal & Contact Details</h3>
+                <form action="#" method="POST">
+                    <div class="form-grid">
+
+                        <div class="form-group">
+                            <label for="dob">Date of Birth</label>
+                            <input type="date" id="dob" name="dob" value="2006-09-09" readonly>
+                        </div>
+                        <div class="form-group">
+                            <label for="gender">Gender</label>
+                            <input type="text" id="gender" name="gender" value="Male" readonly>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="mobile">Mobile Number</label>
+                            <input type="tel" id="mobile" name="mobile" value="98765 43210" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Primary Email</label>
+                            <input type="email" id="email" name="email" value="d25ce152@charusat.edu.in" required>
+                        </div>
+
+                        <div class="form-group full-width">
+                            <label for="address">Permanent Address</label>
+                            <textarea id="address" name="address" rows="3" required> </textarea>
+                        </div>
+                    </div>
+
+                    <div class="form-actions">
+                        <button type="submit" class="save-button primary-bg">Save Changes</button>
+                        <button type="button" class="cancel-button">Reset</button>
+                    </div>
+                </form>
+            </section>
+        </main>
+    </div>
+
+    <footer class="main-footer">
+        <p>&copy; 2025 CHARUSAT (Student E-Portal). All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

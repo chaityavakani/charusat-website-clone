@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHARUSAT | Student Registration - New User</title>
+    <link rel="stylesheet" type="text/css" href="register.css">
+</head>
+
+<body>
+    <header class="main-header">
+        <div class="logo">CHARUSAT</div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html">Home Page</a></li>
+                <li><a href="events.html">Events Page</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="about.html">About Portal</a></li>
+                <li><a href="login.html" class="nav-button">Login Page</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="register-container">
+        <div class="registration-card">
+            <header class="card-header">
+                <h1>New Student Registration</h1>
+                <p>Please enter your pre-admission details to set up your CHARUSAT E-Portal account.</p>
+            </header>
+
+            <form action="dashboard.html" method="POST" class="registration-form">
+
+                <fieldset>
+                    <legend>1. Personal Information</legend>
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="fullName">Full Name (as per documents)</label>
+                            <input type="text" id="fullName" name="fullName" placeholder="Vakani Chaitya Jigneshbhai"
+                                required>
+                        </div>
+                        <div class="form-group">
+                            <label for="mobile">Mobile Number</label>
+                            <input type="tel" id="mobile" name="mobile" placeholder="0987654321" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Primary Email</label>
+                            <input type="email" id="email" name="email" placeholder="example@email.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="dob">Date of Birth</label>
+                            <input type="date" id="dob" name="dob" required>
+                        </div>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>2. Admission Details</legend>
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="institute">Select Institute</label>
+                            <select id="institute" name="institute" required>
+                                <option value="">-- Choose Institute --</option>
+                                <option value="CSPIT">CSPIT (Engineering)</option>
+                                <option value="CMPICA">CMPICA (Computer Applications)</option>
+                                <option value="I2IM">I2IM (Management)</option>
+                                <option value="RPCP">RPCP (Pharmacy)</option>
+                                <option value="PDPIAS">PDPIAS (Applied Sciences)</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="program">Program / Course</label>
+                            <input type="text" id="program" name="program" placeholder="e.g., B.Tech. (CE)" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="admNo">Provisional Admission No. / CET Roll No.</label>
+                            <input type="text" id="admNo" name="admNo" placeholder="G0123456" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="year">Admission Year</label>
+                            <input type="number" id="year" name="year" min="2020" max="2025" value="2025" required>
+                        </div>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>3. Create Portal Access</legend>
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="password">Create Password</label>
+                            <input type="password" id="password" name="password" placeholder="Min. 8 characters"
+                                required>
+                        </div>
+                        <div class="form-group">
+                            <label for="confirmPassword">Confirm Password</label>
+                            <input type="password" id="confirmPassword" name="confirmPassword"
+                                placeholder="Re-enter password" required>
+                        </div>
+                    </div>
+                </fieldset>
+
+                <div class="terms-group">
+                    <input type="checkbox" id="terms" name="terms" required>
+                    <label for="terms">I agree to the <a href="#">Terms and Conditions</a> and the CHARUSAT Privacy
+                        Policy.</label>
+                </div>
+
+                <button type="submit" class="register-button">Complete Registration</button>
+            </form>
+
+            <div class="login-link">
+                Already registered? <a href="login.html">Go to Login Page</a>
+            </div>
+        </div>
+    </main>
+
+    <footer class="main-footer">
+        <div class="footer-links">
+            <a href="about.html">About Portal</a> |
+            <a href="contact.html">Contact Us</a> |
+            <a href="admin.html">Admin Control Panel</a>
+        </div>
+        <p>&copy; 2025 CHARUSAT (Charotar University of Science and Technology). All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
