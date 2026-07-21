@@ -4,14 +4,7 @@ A responsive frontend clone of the CHARUSAT University website developed using H
 
 > This project was created for educational and learning purposes only. It is not affiliated with or endorsed by CHARUSAT University.
 
----
-
-## Preview
-
-(Add screenshots here)
-
----
-
+----
 ## Features
 
 - Responsive Design
